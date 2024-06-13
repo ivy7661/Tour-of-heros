@@ -8,7 +8,7 @@
 
 <H2>My Heros</H2>
 <div class="heros">
-    <li *ngFor="let hero of heros">
+    <li *ngFor="let hero of heroes">
         <button type="button" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
             <span class="badge">{{hero.id}} </span>
             <span class="name">{{hero.name}}</span>
@@ -17,10 +17,3 @@
 </div>
 
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>
-
-
-
-
-
-
-

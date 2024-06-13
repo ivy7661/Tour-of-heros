@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Hero } from '../hero';
 import { FormsModule } from '@angular/forms';
-import { HEROS } from '../mock-hero';
+import { HEROES } from '../mock-heroes';
 import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 
 
@@ -19,7 +19,7 @@ export class HeroesComponent {
   //   name:'WindStorm'
   // };
   selectedHero?:Hero;
-  heros=HEROS;
+  heroes=HEROES;
 
 
   onSelect(hero:Hero):void {
