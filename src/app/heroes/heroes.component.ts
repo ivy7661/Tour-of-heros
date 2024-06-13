@@ -14,7 +14,7 @@ import { HeroService } from '../hero.service';
   templateUrl: './heroes.component.html',
   styleUrl: './heroes.component.scss'
 })
-export class HeroesComponent implements OnInit{
+export class HeroesComponent implements OnInit {
   constructor(private heroService:HeroService){}
 
   ngOnInit():void {
@@ -24,7 +24,7 @@ export class HeroesComponent implements OnInit{
   //   id:1,
   //   name:'WindStorm'
   // };
-  selectedHero?:Hero;
+  selectedHero: Hero = { id: 0, name: '' };
   // heroes=HEROES;
   heroes:Hero[]=[]
 

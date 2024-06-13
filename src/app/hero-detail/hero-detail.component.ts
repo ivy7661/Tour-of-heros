@@ -1,13 +1,13 @@
 import { Component,Input, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+import { NgIf, UpperCasePipe } from '@angular/common';
 
 
 @Component({
   selector: 'app-hero-detail',
   standalone: true,
-  imports: [FormsModule,CommonModule],
+  imports: [FormsModule, UpperCasePipe, NgIf],
   templateUrl: './hero-detail.component.html',
   styleUrl: './hero-detail.component.scss'
 })
@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
 
 
 export class HeroDetailComponent implements OnInit {
-  @Input() hero?: Hero;
+  @Input() hero: Hero = { id: 0, name: '' };
 
   constructor(){};
 
