@@ -18,16 +18,9 @@ export class HeroService {
     private messageService: MessageService
   ) { }
 
-  // getHeroes():Observable<Hero[]> {
-  //   const heroes=of(HEROES);
-  //   this.messageService.add('HeroService:fetched heroes');
-  //   return heroes;
-  // }
-
   getHeroes(): Observable<Hero[]> {
     return this.http.get<Hero[]>(this.heroesUrl)
       .pipe(
-        tap(_ => this.log('fetched heroes')),
         catchError(this.handleError<Hero[]>('getHeroes', []))
       );
   }

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Hero } from '../hero';
 import { FormsModule } from '@angular/forms';
-// import { HEROES } from '../mock-heroes';
 import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { HeroService } from '../hero.service';
 import { MessageService } from '../message.service';
