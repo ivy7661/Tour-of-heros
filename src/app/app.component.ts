@@ -5,6 +5,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MessagesComponent } from './messages/messages.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+// import { HttpClientModule } from '@angular/common/http';
+// import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+// import { InMemoryDataService } from './in-memory-data.service';
 
 @Component({
   selector: 'app-root',
@@ -15,4 +18,7 @@ import { RouterModule } from '@angular/router';
 })
 export class AppComponent {
   title = 'Tour of heros';
+
+  
 }
+
